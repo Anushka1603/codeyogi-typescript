@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { Lecture } from "./models/Lecture";
+import { Lectures } from "./models/Lectures";
 import MDEditor from "@uiw/react-md-editor";
 
-type LectureRowProps = { lecture: Lecture };
+type LectureRowProps = { lecture: Lectures };
 
 const LectureRow: FC<LectureRowProps> = ({ lecture }) => {
   return (

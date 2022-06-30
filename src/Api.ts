@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Assignment } from "./models/Assignment";
-import { Lecture } from "./models/Lecture";
+import { Lectures } from "./models/Lectures";
 import { User } from "./models/Student";
 
 const Codeyogi_Base_Url = "https://api.codeyogi.io/";
@@ -20,7 +20,7 @@ export const getStudents = async () => {
 };
 
 export const getLectures = async () => {
-  const response = await axios.get<Lecture[]>(
+  const response = await axios.get<Lectures[]>(
     Codeyogi_Base_Url + `batches/1/sessions`,
     {
       withCredentials: true,

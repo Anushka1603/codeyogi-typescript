@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { getLectures } from "../Api";
-import { Lecture } from "../models/Lecture";
+import { Lectures } from "../models/Lectures";
 import LectureRow from "../LectureRow";
 
 function LectureListPage() {
-  const [lectures, setLectures] = useState<Lecture[]>([]);
+  const [lectures, setLectures] = useState<Lectures[]>([]);
 
   useEffect(() => {
     const token = getLectures();
